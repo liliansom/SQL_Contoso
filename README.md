@@ -1,4 +1,4 @@
-Repositório para estudo de SQL com Banco de Dados Contoso.
+# Repositório para estudo de SQL com Banco de Dados Contoso.
 Segundo Wikipedia, o Microsoft SQL Server é um sistema de gerenciamento de banco de dados relacional desenvolvido pela Microsoft.
 Já o Banco de dados Contoso pertence a uma empresa de varejo fictícia criada pela Microsoft SQL Server para estudo da linguagem SQL.
 
