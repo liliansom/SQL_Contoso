@@ -1,0 +1,64 @@
+-- Resolução dos exercícios propostos pela Hashtag Treinamentos em SQL
+-- 1.a
+SELECT
+	MAX(ProductKey)
+FROM
+	DimProduct
+
+-- 1.b
+SELECT
+	*
+FROM
+	DimCustomer
+
+-- 2.a e b
+SELECT
+	CustomerKey AS 'Number', 
+	FirstName AS 'Name',
+	EmailAddress AS 'Email',
+	BirthDate As 'Birthday'
+FROM
+	DimCustomer
+WHERE NOT FirstName = 'Null'
+
+-- 3.a
+SELECT
+	TOP(100)*
+FROM
+	DimCustomer
+
+-- 3.b
+SELECT
+	TOP(20) PERCENT *
+FROM
+	DimCustomer
+
+-- 3.c e d
+SELECT
+	TOP(100) FirstName AS 'Nome',
+	EmailAddress AS 'EndereçoEletrônico',
+	BirthDate AS 'DataDeNascimento'
+FROM
+	DimCustomer
+
+-- 4.a
+SELECT
+	DISTINCT Manufacturer AS Fornecedores
+FROM
+	DimProduct
+
+--4.b
+SELECT
+	DISTINCT ProductKey
+FROM
+	FactSales
+ORDER BY 
+	ProductKey ASC 
+	-- Produto 944: 'A. Datum Compact Digital Camera M200 Black'
+
+SELECT
+	*
+FROM
+	DimProduct
+WHERE 
+	ProductKey = 944
